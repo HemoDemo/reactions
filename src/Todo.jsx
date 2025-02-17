@@ -3,7 +3,7 @@ import "./todo.css";
 
 function Todo() {
   const focus = useRef(null);
-  const [tasks, setTasks] = useState(["1"]);
+  const [tasks, setTasks] = useState([]);
   const [msg, setMsg] = useState(["No tasks added"]);
   const [newTask, setNewTask] = useState("");
   const [status, setStatus] = useState('start');
