@@ -1,1 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  background: #000111 !important;
+  color: #777 !important;
+  box-sizing: border-box !important;
+  min-width: 30px;
+}
+.app {
+  margin: 20px auto;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+.status {
+  position: sticky;
+  bottom: 0px;
+  height: 20px;
+  width: 100%;
+  background: #123;
+  text-align: center;
+  color: rgb(58, 53, 53) !important;
+  font-size: 12px !important;
+}
+
+.mobile-tasks {
+  overflow: hidden;
+  width: 340px;
+  height: 565px;
+  border: 1px solid #112;
+  margin: 10px auto;
+  padding: 12px 2px;
+  box-shadow: 1px 1px 1px 1px #0b0813, 1px 4px 6px 2px #1483dd36;
+  background: linear-gradient(
+    to top right,
+    #123,
+    #111111,
+    #000000,
+    #020202,
+    #000,
+    #080808
+  ) !important;
+}
+.tasks-big {
+  background: #000 !important;
+}
+/*   logo  imprtant */
+.txt {
+  background: #000000fd !important;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 92%;
+  width: 130px !important;
+  border-top: 12px solid #5e5a5a;
+  height: 10px !important;
+}
+
+.big-titles {
+  font-family: Papyrus;
+  background: linear-gradient(
+    to top,
+    rgba(153, 155, 156, 0.603),
+    #4e494973,
+    #4642425e,
+    #333333a2,
+    #666262,
+    #6b686833,
+    #8a8888a6
+  ) !important;
+  border-top-right-radius: 60%;
+  text-indent: 50px;
+  color: #345 !important;
+  text-shadow: 4px 2px 1px #000;
+  height: 80px;
+  padding-top: 1px;
+}
+/* entry section */
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to bottom left,
+    #584b4ba9,
+    #33333355,
+    #22222255,
+    #55555533
+  ) !important;
+
+  margin: 1px auto;
+}
+
+.tasks-entry-big {
+  color: grey !important;
+  color: #345 !important;
+  font-family: Papyrus;
+  width: 81%;
+  height: 80px;
+  background: linear-gradient(
+    to bottom right,
+    #000111de,
+    #00022296,
+    #00033355,
+    #00034455,
+    #00022233,
+    #00011133
+  ) !important;
+  padding: 2px;
+  border-top: 3px solid #122;
+  border-bottom: 3px solid #122;
+  margin: 2px 9px;
+  font-size: 30px !important;
+  text-indent: 5px;
+  font-weight: bold;
+}
+.tasks-entry-big::placeholder {
+  color: #222;
+}
+.tasks-entry-btn {
+  background: linear-gradient(
+    to top right,
+    rgba(29, 64, 100, 0.959),
+    #111111,
+    #000000
+  ) !important;
+  border-radius: 50%;
+  color: powderblue !important;
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+  margin: 5px;
+  font-size: 33px;
+  text-align: center;
+  box-shadow: 1px 2px 2px 1px #000;
+  border: 2px solid #000000;
+  transition: 2s;
+  text-shadow: 2px 2px 2px #000;
+}
+.tasks-entry-btn:hover {
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #111;
+  border: 2px solid #000;
+  box-shadow: 1px 2px 2px 1px #333;
+  transition: 1s;
+  color: dimgrey !important;
+  background: linear-gradient(to top, #123, #111111, #000000) !important;
+}
+
+/*disabled btn*/
+
+.tasks-entry-btn-disabled {
+  text-shadow: 2px 2px 2px #111;
+  border: 2px solid #000;
+  box-shadow: 1px 2px 2px 1px #333;
+  transition: 1s;
+  color: dimgrey !important;
+  background: linear-gradient(to bottom, #123, #111111, #000000) !important;
+  border-radius: 50%;
+  color: powderblue !important;
+  font-family: Papyrus;
+  width: 55px;
+  height: 55px;
+  padding: 2px;
+  margin: 5px;
+  font-size: 33px;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+.tasks-entry-btn-disabled:hover {
+  cursor: grab;
+}
+
+.tasks-shown-start {
+  background: linear-gradient(
+    to top right,
+    rgb(6, 13, 20),
+    #111111,
+    #5b7741,
+    #050505
+  ) !important;
+  h2 {
+    background: linear-gradient(
+      to bottom right,
+      #3d382e04,
+      #1708241e,
+      #2b303d71,
+      #b9db5bc2
+    ) !important;
+    position: sticky;
+    text-shadow: 1px 1px 1px #000;
+  }
+  p {
+    color: #000 !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #ffffffa1;
+    padding-bottom: 11px;
+    font-size: 17px;
+    height: 33px !important;
+    background: linear-gradient(
+      to bottom,
+      #0505051c,
+      #1616160a,
+      #22212117,
+      #242121
+    ) !important;
+    box-shadow: 6px 1px 5px 6px #000;
+  }
+
+  font-family: Papyrus;
+  font-size: 15px;
+  text-align: center;
+  
+}
+.tasks-shown::-webkit-scrollbar {
+  width: 5px;
+}
+.tasks-shown::-webkit-scrollbar-track {
+  background: #000; /*#f1f1f1;*/
+}
+.tasks-shown::-webkit-scrollbar-thumb {
+  background: #38114e;
+}
+.tasks-shown::-webkit-scrollbar-thumb:hover {
+  background: #4f1a6e;
+  cursor: pointer;
+}
+ol {
+  background: transparent !important;
+}
+
+.tasks-shown {
+  box-sizing: border-box;
+  width: 330px !important;
+  overflow-x: hidden !important;
+  font-family: Papyrus;
+  padding: 5px 1px;
+  margin: 5px 0;
+  font-size: 15px;
+  text-align: center;
+
+  background: linear-gradient(
+    to top right,
+    rgba(15, 58, 100, 0.856),
+    #83797980,
+    #a6bd6e88,
+    #2f56a057,
+    #a0337f36,
+    #38114e,
+    #4d2b779f
+  ) !important;
+  li {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    border: none;
+    padding: 1px;
+    margin: 1px;
+    height: 41px;
+    width: 325px;
+    .task-txt {
+      background: linear-gradient(
+        to left bottom,
+        #87610011,
+        #4da34ab0,
+        #345345,
+        #82788571
+      ) !important;
+      padding: 1px;
+      font-size: 20px;
+      text-align: left;
+      color: #000 !important;
+      max-height: 20px !important;
+      min-height: 20px !important;
+      height: 20px !important;
+      font-weight: bold;
+      width: 380px;
+    }
+
+    .task-controls {
+      width: 90px;
+      height: 37px;
+      background: linear-gradient(
+        to bottom,
+        #85744aa1,
+        #12311155,
+        #121b17,
+        #01011694
+      ) !important;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .del-btn,
+      .up-btn,
+      .down-btn {
+        padding: 6px 8px;
+        color: rgba(255, 217, 0, 0.438) !important;
+        font-size: 15px;
+        text-align: center;
+        background: #111 !important;
+        background: linear-gradient(
+          to left bottom,
+          #11100055,
+          #12311155,
+          #1c1d38,
+          #0d0d0e
+        ) !important;
+        border-radius: 50%;
+        border: 1px solid #000000b0;
+      }
+      .del-btn:hover,
+      .up-btn:hover,
+      .down-btn:hover {
+        border: 1px solid #333;
+        background: linear-gradient(
+          to left top,
+          #11100033,
+          #12311144,
+          #34534511,
+          #44412322
+        ) !important;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.438) !important;
+      }
+    }
+  }
+}
+.m {
+  width: 40px !important;
+  margin-left: 40px;
+  color: rgba(255, 217, 0, 0.438) !important;
+  font-size: 15px;
+  padding: 8px 11px;
+  text-align: center;
+  background: linear-gradient(
+    to left bottom,
+    #b8a983b9,
+    #12311155,
+    #345345,
+    #00012355
+  ) !important;
+  border: 1px solid #111;
+  border-radius: 50%;
+}
+.m:hover {
+  border: 1px solid #555;
+  background: linear-gradient(
+    to left bottom,
+    #87600033,
+    #12311144,
+    #34534511,
+    #00012322
+  ) !important;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.438) !important;
+}
+
+.tasks-big-shown {
+  width: fit-content;
+  background: linear-gradient(
+    to top,
+    rgba(73, 73, 73, 0.603),
+    #4e494973,
+    #4642425e,
+    #33333379,
+    #6b686833,
+    #313131fd
+  ) !important;
+  height: 285px;
+}
+
+.txt-content {
+  width: 233px;
+  overflow: scroll;
+  overflow-y: hidden;
+  background: linear-gradient(
+    to left bottom,
+    #87600055,
+    #12311155,
+    #345345,
+    #d5d5e0ef
+  ) !important;
+
+  height: 38px;
+}
+/* .txt-content scrollbar */
+.txt-content::-webkit-scrollbar {
+  height: 6px;
+}
+
+.txt-content::-webkit-scrollbar-track {
+  background: #12345655;
+  border-top: 1px solid #000;
+}
+
+.txt-content::-webkit-scrollbar-thumb {
+  background: #234;
+  cursor: pointer;
+  border-top: 1px solid #777;
+}
+
+.txt-content::-webkit-scrollbar-thumb:hover {
+  background: #78912355;
+  cursor: pointer;
+}
+
+
+.task-txt-msg {
+  background: linear-gradient(
+    to left bottom,
+    #87600055,
+    #12311155,
+    #345345,
+    #02020f55
+  ) !important;
+  padding: 5px;
+  font-size: 20px;
+  min-width: 180px;
+  max-width: 180px;
+  text-align: left;
+  color: grey !important;
+  max-height: 20px !important;
+  min-height: 20px !important;
+  height: 20px !important;
+}
 
