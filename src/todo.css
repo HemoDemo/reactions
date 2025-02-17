@@ -17,7 +17,7 @@
 .status {
   position: sticky;
   bottom: 0px;
-  height: 20px;
+  height: 30px;/*20*/
   width: 100%;
   background: #123;
   text-align: center;
@@ -103,7 +103,7 @@
     #000111de,
     #00022296,
     #00033355,
-    #00034455,
+    #22234455,
     #00022233,
     #00011133
   ) !important;
