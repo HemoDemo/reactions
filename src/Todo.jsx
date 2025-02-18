@@ -2,8 +2,22 @@ import { useState, useRef, useEffect } from "react";
 import "./todo.css";
 
 function Todo() {
+
+
+  const getTasks=()=>{
+    const data = JSON.parse(localStorage.getItem("tasks"));
+    if(data){
+      return JSON.parse(localStorage.getItem("tasks"));
+    }
+    else{
+      return []
+    }
+
+  }
+
   const focus = useRef(null);
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(getTasks());
+  const [localTasks, setLocalTasks] = useState(getTasks());
   const [msg, setMsg] = useState(["No tasks added"]);
   const [newTask, setNewTask] = useState("");
   const [status, setStatus] = useState('start');
@@ -13,6 +27,12 @@ function Todo() {
     focus.current.focus();
   }, []);
 
+  useEffect(()=>{
+    localStorage.setItem("tasks", JSON.stringify(localTasks))
+  },[localTasks])
+
+
+
   function change(e) {
     setNewTask(e.target.value);
   }
@@ -21,6 +41,7 @@ function Todo() {
     setStatus('adding');
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
+      setLocalTasks((t) => [...t, newTask]);
       addTaskNumber > -1 && setAddTaskNumber(addTaskNumber + 1);
     }
     if (newTask.trim() === "") setMsg(["Add tasks to do"]);
@@ -127,6 +148,12 @@ function Todo() {
         </section>
         <section className="status">
           status: {status} TASKS| {tasks.length} MSG ={msg.length ===0 ? 'try to add tasks' : msg} ADD {addTaskNumber}
+        </section>
+        <section className="lastLine">
+          <button className="rest" onClick={()=>setLocalTasks([])}>rest</button>
+          <button className="rest" onClick={()=>{localStorage.clear(); setTasks([]); setLocalTasks([])}}>re/all</button>
+          <button className="rest" onClick={()=>setTasks([])}>NOTASK</button>
+          <button className="rest" onClick={()=>setNewTask("")}>clear</button>
         </section>
       </div>
     </>
