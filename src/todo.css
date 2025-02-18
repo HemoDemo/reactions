@@ -3,7 +3,7 @@
   margin: 0;
   outline: none;
   border: none;
-  background: #00011138 !important;
+  /*background: #00011138 !important;*/
   color: #777 !important;
   box-sizing: border-box !important;
   min-width: 30px;
@@ -262,11 +262,12 @@ ol {
     gap: 1px;
     border: none;
     padding: 1px;
-    margin: 1px;
+    margin: 1px auto;
     margin-bottom:12px !important;
     height: 41px;
-    width: 325px;
-    .task-txt {
+    width: 350px;
+  
+    .task-txt {/*********************************************************/
       background: linear-gradient(
         to left bottom,
         #87610011,
@@ -274,26 +275,31 @@ ol {
         #345345,
         #82788571
       ) !important;
-      padding: 1px;
-      font-size: 20px;
-      text-align: left;
+      padding: 1px 12px;
+      font-size: 24px;
+      text-align:center;
       color: #000 !important;
       max-height: 20px !important;
       min-height: 20px !important;
       height: 20px !important;
       font-weight: bold;
-      width: 380px;
+      width: 440px;
+     
     }
 
     .task-controls {
-      width: 95px;
+      width: 133px;
       height: 37px;
+      margin-left:-8px;
+      z-index:22;
+      border-radius:0px 250px 250px 0px !important;
       background: linear-gradient(
         to bottom,
-        #85744aa1,
-        #12311155,
+        #85744a,
+        #123111,
         #121b17,
-        #01011694
+        #01011694,
+         #111
       ) !important;
 
       display: flex;
@@ -389,10 +395,12 @@ ol {
   height: 295px;
 }
 
-.txt-content {
-  width: 233px;
+.txt-content {/************************************************************/
+  width: 380px;
+clip-path: inset(0 round 15px);
   overflow: scroll;
   overflow-y: hidden;
+    border-radius:250px 0px 0px 250px  !important;
   background: linear-gradient(
     to left bottom,
     #87600055,
@@ -403,9 +411,13 @@ ol {
 
   height: 38px;
 }
+/*
+https://www.youtube.com/watch?v=vn41-lpnjNM
+*/
 /* .txt-content scrollbar */
 .txt-content::-webkit-scrollbar {
   height: 6px;
+border-radius:250px 0px 0px 250px  !important;
 }
 
 .txt-content::-webkit-scrollbar-track {
@@ -449,10 +461,10 @@ margin-left:-60px !important;
 background: transparent !important;
 width:450px !important;
 .txt-content{
-width:280px !important;
-.task-txt{
-width:280px;
-}
+    width:280px !important;
+   .task-txt{
+         width:280px;
+    }
 }
 .tsk-cont-d{
    border-top-right-radius:22%;
@@ -491,16 +503,15 @@ width:280px;
     justify-content: space-around;
     justify-items: stretch;
     background:#111000 !important;
-    height:55px !important;
-    padding-top:8px !important;
+    height:45px !important;
    .himo-img{
-     width:40px;
-     height:40px;
-   }
+        width:40px;
+        height:40px;
+    }
    .himo-title{
-     width:280px;
-     height:47px;
-     font-size:16px;
-     margin-top:15px;
-   }
+      width:280px;
+      height:47px;
+      font-size:16px;
+      margin-top:15px;
+}
 }
