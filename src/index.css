@@ -3,4 +3,6 @@ body {
   background:#000000 !important;
   width:100vw;
 }
-
+#root{
+  background:#000000 !important;
+}
