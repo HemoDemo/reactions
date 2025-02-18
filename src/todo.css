@@ -1,5 +1,3 @@
-
-
 * {
   padding: 0;
   margin: 0;
@@ -32,8 +30,8 @@
 
 .mobile-tasks {
   overflow: hidden;
-  width: 340px;
-  height: 630px;
+  width: 360px;
+  height: 670px;
   border: 1px solid #112;
   margin: 10px auto;
   padding: 12px 2px;
@@ -381,15 +379,12 @@ ol {
 }
 
 .tasks-big-shown {
-  width: fit-content;
+  width: 352px !important;
   background: linear-gradient(
     to top,
     rgba(73, 73, 73, 0.603),
-    #4e494973,
-    #4642425e,
-    #33333379,
-    #6b686833,
-    #313131fd
+   rgba(73, 73, 73, 0.603),
+    rgba(73, 73, 73, 0.603)
   ) !important;
   height: 295px;
 }
@@ -479,11 +474,24 @@ width:280px;
 .rest{
   font-size: 22px;
   font-family:Papyrus;
-  background-color: #123 !important;
+  background-color: #111000 !important;
   padding: 1px 2px;
   border:2px solid rgb(63, 63, 78);
+  border-bottom:none;
+  min-width:70px;
 }
 .rest:hover{
   background-color: #0808084b !important;
   cursor: pointer;
+}
+.app-creator{
+  
+  display: flex;
+   align-items: center;
+    justify-content: space-around;
+    justify-items: stretch;
+    background:#111000 !important;
+    height:45px !important;
+   .himo-img{width:40px;height:40px;}
+   .himo-title{width:240px;height:30px;}
 }
