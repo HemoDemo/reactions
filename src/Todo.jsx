@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "./todo.css";
-
+import Himo from './himo.png';
 function Todo() {
 
 
@@ -154,6 +154,10 @@ function Todo() {
           <button className="rest" onClick={()=>{localStorage.clear(); setTasks([]); setLocalTasks([])}}>re/all</button>
           <button className="rest" onClick={()=>setTasks([])}>NOTASK</button>
           <button className="rest" onClick={()=>setNewTask("")}>clear</button>
+        </section>
+        <section className='app-creator'>
+                  <img src={Himo} className='himo-img' alt='himo logo'/>
+                 <h5 className='himo-title'>CREATED BY IBRAHIM HASSAN 2025</h5>
         </section>
       </div>
     </>
