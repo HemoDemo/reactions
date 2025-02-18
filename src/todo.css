@@ -3,7 +3,7 @@
   margin: 0;
   outline: none;
   border: none;
-  background: #000111 !important;
+  background: #00011138 !important;
   color: #777 !important;
   box-sizing: border-box !important;
   min-width: 30px;
@@ -13,22 +13,25 @@
   width: 100% !important;
   min-width: 100% !important;
   max-width: 100% !important;
+  background: #202349d8 !important;
 }
 .status {
   position: sticky;
   bottom: 0px;
-  height: 30px;/*20*/
+  height: 40px;
   width: 100%;
-  background: #123;
+  background: rgb(101, 124, 148) !important;
   text-align: center;
-  color: rgb(158, 153, 153) !important;
+  color: rgb(8, 8, 8) !important;
   font-size: 12px !important;
+  border: 2px solid #000;
+  padding-top: 5px;
 }
 
 .mobile-tasks {
   overflow: hidden;
   width: 340px;
-  height: 585px;
+  height: 595px;
   border: 1px solid #112;
   margin: 10px auto;
   padding: 12px 2px;
@@ -70,6 +73,7 @@
     #8a8888a6
   ) !important;
   border-top-right-radius: 60%;
+  border-top-left-radius: 5%;
   text-indent: 50px;
   color: #345 !important;
   text-shadow: 4px 2px 1px #000;
@@ -83,6 +87,7 @@
   align-items: center;
   background: linear-gradient(
     to bottom left,
+    #666,
     #584b4ba9,
     #33333355,
     #22222255,
@@ -93,36 +98,35 @@
 }
 
 .tasks-entry-big {
-  color: grey !important;
-  color: #345 !important;
+  color: rgba(228, 216, 46, 0.534) !important;
   font-family: Papyrus;
   width: 81%;
   height: 80px;
   background: linear-gradient(
     to bottom right,
-    #000111de,
-    #00022296,
-    #00033355,
+    #444111de,
+    #55522296,
+    #66633355,
     #22234455,
     #00022233,
     #00011133
   ) !important;
   padding: 2px;
-  border-top: 3px solid #122;
-  border-bottom: 3px solid #122;
-  margin: 2px 9px;
+  border-top: 2px solid #122;
+  border-bottom: 2px solid #122;
+  margin: 2px 3px;
   font-size: 30px !important;
-  text-indent: 5px;
+  text-indent: 12px;
   font-weight: bold;
 }
 .tasks-entry-big::placeholder {
-  color: #222;
+  color: #667;
 }
 .tasks-entry-btn {
   background: linear-gradient(
     to top right,
     rgba(29, 64, 100, 0.959),
-    #111111,
+    #222222,
     #000000
   ) !important;
   border-radius: 50%;
@@ -145,7 +149,8 @@
   box-shadow: 1px 2px 2px 1px #333;
   transition: 1s;
   color: dimgrey !important;
-  background: linear-gradient(to top, #123, #111111, #000000) !important;
+  background: linear-gradient(to top,
+  #123, #222222, #333333) !important;
 }
 
 /*disabled btn*/
@@ -156,7 +161,8 @@
   box-shadow: 1px 2px 2px 1px #333;
   transition: 1s;
   color: dimgrey !important;
-  background: linear-gradient(to bottom, #123, #111111, #000000) !important;
+  background: linear-gradient(to bottom,
+ #123, #222222, #111111) !important;
   border-radius: 50%;
   color: powderblue !important;
   font-family: Papyrus;
@@ -186,7 +192,8 @@
       #3d382e04,
       #1708241e,
       #2b303d71,
-      #b9db5bc2
+      #b9db5bc2,
+      #44422255
     ) !important;
     position: sticky;
     text-shadow: 1px 1px 1px #000;
@@ -195,9 +202,9 @@
     color: #000 !important;
     font-weight: bold;
     text-shadow: 1px 1px 1px #ffffffa1;
-    padding-bottom: 11px;
+    padding-bottom: 8px !important;
     font-size: 17px;
-    height: 33px !important;
+    height: 34px !important;
     background: linear-gradient(
       to bottom,
       #0505051c,
@@ -207,11 +214,9 @@
     ) !important;
     box-shadow: 6px 1px 5px 6px #000;
   }
-
   font-family: Papyrus;
   font-size: 15px;
   text-align: center;
-  
 }
 .tasks-shown::-webkit-scrollbar {
   width: 5px;
@@ -235,11 +240,10 @@ ol {
   width: 330px !important;
   overflow-x: hidden !important;
   font-family: Papyrus;
-  padding: 5px 1px;
-  margin: 5px 0;
+  padding: 2px 1px;
+  margin: 2px 0;
   font-size: 15px;
   text-align: center;
-
   background: linear-gradient(
     to top right,
     rgba(15, 58, 100, 0.856),
@@ -259,6 +263,7 @@ ol {
     border: none;
     padding: 1px;
     margin: 1px;
+    margin-bottom:12px !important;
     height: 41px;
     width: 325px;
     .task-txt {
@@ -281,7 +286,7 @@ ol {
     }
 
     .task-controls {
-      width: 90px;
+      width: 95px;
       height: 37px;
       background: linear-gradient(
         to bottom,
@@ -290,23 +295,30 @@ ol {
         #121b17,
         #01011694
       ) !important;
+
       display: flex;
       justify-content: space-between;
+      gap:2px;
       align-items: center;
       .del-btn,
       .up-btn,
       .down-btn {
+         width:15px;
+         height:28px;
         padding: 6px 8px;
+        margin-bottom:4px;
         color: rgba(255, 217, 0, 0.438) !important;
         font-size: 15px;
         text-align: center;
         background: #111 !important;
         background: linear-gradient(
           to left bottom,
-          #11100055,
-          #12311155,
-          #1c1d38,
-          #0d0d0e
+          #11133355,
+            dimgrey,
+          #12344455,
+          #1c1d3855,
+          #0d0d0e33,
+          #111
         ) !important;
         border-radius: 50%;
         border: 1px solid #000000b0;
@@ -325,16 +337,24 @@ ol {
         cursor: pointer;
         color: rgba(255, 255, 255, 0.438) !important;
       }
+      .del-btn{
+         padding:2px;
+         font-size:14px;
+         width:15px;
+         height:28px;
+       }
     }
   }
 }
-.m {
-  width: 40px !important;
-  margin-left: 40px;
+
+.d {
+  width: 48px !important;
+  height: 38px !important;
+  margin-left: 0px;
+  margin-top: 2px;
   color: rgba(255, 217, 0, 0.438) !important;
-  font-size: 15px;
-  padding: 8px 11px;
-  text-align: center;
+  font-size: 25px !important;
+  padding: 1px 16px !important;
   background: linear-gradient(
     to left bottom,
     #b8a983b9,
@@ -342,10 +362,10 @@ ol {
     #345345,
     #00012355
   ) !important;
-  border: 1px solid #111;
-  border-radius: 50%;
+  border: 1px solid #111 !important;
+  border-radius: 5% !important;
 }
-.m:hover {
+.d:hover {
   border: 1px solid #555;
   background: linear-gradient(
     to left bottom,
@@ -369,7 +389,7 @@ ol {
     #6b686833,
     #313131fd
   ) !important;
-  height: 285px;
+  height: 295px;
 }
 
 .txt-content {
@@ -392,18 +412,18 @@ ol {
 }
 
 .txt-content::-webkit-scrollbar-track {
-  background: #12345655;
-  border-top: 1px solid #000;
+  background: #12345666;
+  border-top: 1px solid #111;
 }
 
 .txt-content::-webkit-scrollbar-thumb {
-  background: #234;
+  background: #23444455;
   cursor: pointer;
-  border-top: 1px solid #777;
+  border-top: 1px solid #089;
 }
 
 .txt-content::-webkit-scrollbar-thumb:hover {
-  background: #78912355;
+  background: #78912389;
   cursor: pointer;
 }
 
@@ -426,4 +446,27 @@ ol {
   min-height: 20px !important;
   height: 20px !important;
 }
+
+.d-father{
+margin-left:-60px !important;
+background: transparent !important;
+width:450px !important;
+.txt-content{
+width:280px !important;
+.task-txt{
+width:280px;
+}
+}
+.tsk-cont-d{
+   border-top-right-radius:22%;
+   border-bottom-right-radius:22%;
+  border-top-left-radius:2%;
+   border-bottom-left-radius:2%;
+   background: transparent !important;
+    width:fit-content !important;
+    padding:2px;
+     width:40px !important;
+}
+}
+
 
