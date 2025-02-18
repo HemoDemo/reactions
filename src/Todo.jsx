@@ -112,12 +112,12 @@ function Todo() {
             ))}
             {tasks.length === 0 &&
               msg.map((m, i) => (
-                <li key={i}>
+                <li key={i} className='d-father'>
                   <div className="txt-content">
                     <h2 className="task-txt">{m}</h2>
                   </div>
-                  <div className="task-controls">
-                    <button className="del-btn m" onClick={() => delM(i)}>
+                  <div className="task-controls tsk-cont-d">
+                    <button className="del-btn d" onClick={() => delM(i)}>
                       x
                     </button>
                   </div>
