@@ -530,11 +530,11 @@ ol {
   justify-items: stretch;
 }
 .rest {
-  font-size: 22px;
+  font-size: 12px;
   font-family: Papyrus;
   background-color: #111000 !important;
-  padding: 1px 2px;
-  border: 2px solid rgb(63, 63, 78);
+  padding: 8px 1px;
+  border: 1px solid rgb(63, 63, 78);
   border-bottom: none;
   min-width: 70px;
 }
@@ -546,8 +546,8 @@ ol {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #111000 !important;
-  height: 45px !important;
+  background: #141300 !important;
+  height: 55px !important;
   .himo-img {
     width: 40px;
     height: 40px;
@@ -583,3 +583,4 @@ ol {
     padding: 0px 2px;
   }
 }
+
