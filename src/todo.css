@@ -542,6 +542,20 @@ ol {
   background-color: #0808084b !important;
   cursor: pointer;
 }
+
+.refresh{
+  font-size: 12px;
+  font-family: Papyrus;
+  border: 1px solid rgb(63, 63, 78);
+  border-bottom: none;
+  padding: 4px 1px;
+  background-color: #0808084b !important;
+  min-width: 60px;
+}
+.refresh:hover{
+  border: 1px solid rgb(104, 114, 76);
+  color:rgb(164, 165, 89) !important;
+}
 .app-creator {
   display: flex;
   align-items: center;
