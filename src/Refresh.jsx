@@ -1,5 +1,5 @@
 const Refresh=()=>{
-  const function handleRefresh(){
+  const handleRefresh=()=>{
     window.location.reload();
   }
   return(
