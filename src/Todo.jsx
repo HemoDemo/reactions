@@ -76,7 +76,7 @@ function Todos() {
         className="tasks tasks-big mobile-tasks"
         style={{ border: "2px solid #123", background: "silver !important" }}
       >
-        <h1 className="big-titles">
+        <section className="big-titles">
           <span className="txt4"></span>
           <span className="txt5"></span>
           <span className="txt6"></span>
@@ -85,7 +85,7 @@ function Todos() {
           <span className="txt5"></span>
           <span className="txt4"></span>
           <Refresh />
-        </h1>
+        </section>
         <section className="entry">
           <input
             type="text"
