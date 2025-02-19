@@ -3,7 +3,7 @@ const Refresh=()=>{
     window.location.reload();
   }
   return(
-         <button onClick={handleRefresh}>Refresh</button>
+         <button className="refresh" onClick={handleRefresh}>Refresh</button>
     )
 }
 export default Refresh;
