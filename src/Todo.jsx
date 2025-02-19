@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import "./todo.css";
+import Refresh from './Refresh';
 import Himo from "./himo.png";
 function Todos() {
   const getTasks = () => {
@@ -83,6 +84,7 @@ function Todos() {
           <span className="txt6"></span>
           <span className="txt5"></span>
           <span className="txt4"></span>
+          <Refresh />
         </h1>
         <section className="entry">
           <input
