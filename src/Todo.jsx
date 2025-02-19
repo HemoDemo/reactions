@@ -152,7 +152,7 @@ function Todos() {
         </section>
         <section className="lastLine">
           <button className="rest" onClick={() => setLocalTasks([])}>
-            rest
+            REST
           </button>
           <button
             className="rest"
@@ -162,13 +162,13 @@ function Todos() {
               setLocalTasks([]);
             }}
           >
-            re/all
+            REST-ALL
           </button>
           <button className="rest" onClick={() => setTasks([])}>
-            NOTASK
+            NOTASKS
           </button>
           <button className="rest" onClick={() => setNewTask("")}>
-            clear
+            CLEAR
           </button>
         </section>
         <section className="app-creator">
