@@ -1,44 +1,38 @@
 import { useState, useRef, useEffect } from "react";
 import "./todo.css";
-import Himo from './himo.png';
-function Todo() {
-
-
-  const getTasks=()=>{
+import Himo from "./himo.png";
+function Todos() {
+  const getTasks = () => {
     const data = JSON.parse(localStorage.getItem("tasks"));
-    if(data){
+    if (data) {
       return JSON.parse(localStorage.getItem("tasks"));
+    } else {
+      return [];
     }
-    else{
-      return []
-    }
-
-  }
+  };
 
   const focus = useRef(null);
   const [tasks, setTasks] = useState(getTasks());
   const [localTasks, setLocalTasks] = useState(getTasks());
-  const [msg, setMsg] = useState(["No tasks added"]);
+  const [msg, setMsg] = useState(["NO TASKS ADDED"]);
   const [newTask, setNewTask] = useState("");
-  const [status, setStatus] = useState('start');
+  const [status, setStatus] = useState("START");
   const [addTaskNumber, setAddTaskNumber] = useState(0);
 
   useEffect(() => {
     focus.current.focus();
   }, []);
 
-  useEffect(()=>{
-    localStorage.setItem("tasks", JSON.stringify(localTasks))
-  },[localTasks])
-
-
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(localTasks));
+  }, [localTasks]);
 
   function change(e) {
     setNewTask(e.target.value);
   }
 
   function add() {
-    setStatus('adding');
+    setStatus("adding");
     if (newTask.trim() !== "") {
       setTasks((t) => [...t, newTask]);
       setLocalTasks((t) => [...t, newTask]);
@@ -48,19 +42,18 @@ function Todo() {
     setNewTask("");
   }
   function del(index) {
-     setStatus('deleting');
+    setStatus("deleting");
     const t = tasks.filter((task, i) => i !== index);
     setTasks(t);
     addTaskNumber > 0 && setAddTaskNumber(addTaskNumber - 1);
-
   }
   function delM(index) {
-    setStatus('deleting');
+    setStatus("deleting");
     const ms = msg.filter((m, i) => i !== index);
     setMsg(ms);
   }
   function up(index) {
-    setStatus('ascending');
+    setStatus("ascending");
     if (index > 0) {
       const t = [...tasks];
       [t[index - 1], t[index]] = [t[index], t[index - 1]];
@@ -68,7 +61,7 @@ function Todo() {
     }
   }
   function down(index) {
-    setStatus('desending');
+    setStatus("desending");
     if (index < tasks.length - 1) {
       const t = [...tasks];
       [t[index], t[index + 1]] = [t[index + 1], t[index]];
@@ -83,7 +76,13 @@ function Todo() {
         style={{ border: "2px solid #123", background: "silver !important" }}
       >
         <h1 className="big-titles">
-          <span className="txt">Tasks</span>
+          <span className="txt4"></span>
+          <span className="txt5"></span>
+          <span className="txt6"></span>
+          <span className="txt">TASKS</span>
+          <span className="txt6"></span>
+          <span className="txt5"></span>
+          <span className="txt4"></span>
         </h1>
         <section className="entry">
           <input
@@ -112,7 +111,7 @@ function Todo() {
           </p>
         </section>
         <section className="tasks-shown tasks-big-shown">
-          <ol>
+          <ol className="tasks-container">
             {tasks.map((task, index) => (
               <li key={index}>
                 <div className="txt-content">
@@ -133,7 +132,7 @@ function Todo() {
             ))}
             {tasks.length === 0 &&
               msg.map((m, i) => (
-                <li key={i} className='d-father'>
+                <li key={i} className="d-father">
                   <div className="txt-content">
                     <h2 className="task-txt">{m}</h2>
                   </div>
@@ -147,21 +146,39 @@ function Todo() {
           </ol>
         </section>
         <section className="status">
-          status: {status} TASKS| {tasks.length} MSG ={msg.length ===0 ? 'try to add tasks' : msg} ADD {addTaskNumber}
+          STATUS<span>{status}</span>TASKS<span>{tasks.length}</span>MSG
+          <span>{msg.length === 0 ? "TRY TO ADD TASKS" : msg}</span>TN:
+          <span>{addTaskNumber}</span>
         </section>
         <section className="lastLine">
-          <button className="rest" onClick={()=>setLocalTasks([])}>rest</button>
-          <button className="rest" onClick={()=>{localStorage.clear(); setTasks([]); setLocalTasks([])}}>re/all</button>
-          <button className="rest" onClick={()=>setTasks([])}>NOTASK</button>
-          <button className="rest" onClick={()=>setNewTask("")}>clear</button>
+          <button className="rest" onClick={() => setLocalTasks([])}>
+            rest
+          </button>
+          <button
+            className="rest"
+            onClick={() => {
+              localStorage.clear();
+              setTasks([]);
+              setLocalTasks([]);
+            }}
+          >
+            re/all
+          </button>
+          <button className="rest" onClick={() => setTasks([])}>
+            NOTASK
+          </button>
+          <button className="rest" onClick={() => setNewTask("")}>
+            clear
+          </button>
         </section>
-        <section className='app-creator'>
-                  <img src={Himo} className='himo-img' alt='himo logo'/>
-                 <h5 className='himo-title'>CREATED BY IBRAHIM HASSAN 2025</h5>
+        <section className="app-creator">
+          <img src={Himo} className="himo-img" alt="himo logo" />
+          <h5 className="himo-title">CREATED BY IBRAHIM HASSAN 2025</h5>
         </section>
       </div>
     </>
   );
 }
 
-export default Todo;
+export default Todos;
+
