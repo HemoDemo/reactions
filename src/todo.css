@@ -504,7 +504,6 @@ width:450px !important;
   display: flex;
    align-items: center;
     justify-content: space-around;
-    justify-items: stretch;
     background:#111000 !important;
     height:45px !important;
    .himo-img{
@@ -515,6 +514,6 @@ width:450px !important;
       width:290px;
       height:47px;
       font-size:15px;
-      margin-top:15px;
+  
 }
 }
