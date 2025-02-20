@@ -598,7 +598,7 @@ body {
       background: #000 !important;
     }
   .status-title{
-      background: #678 !important;
+      background: red !important;
       width:4px !important;
     }
   .tasks-title{
