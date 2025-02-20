@@ -599,7 +599,15 @@ body {
     }
   .status-title{
       
-    width:9px !important;
+    width:7px !important;
+    }
+  .tasks-title{
+      
+    width:7px !important;
+    }
+  .tasks-added-title{
+      
+    width:10px !important;
     }
   .msg-title{
     width:6px !important;
