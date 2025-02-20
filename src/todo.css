@@ -493,7 +493,7 @@ body {
 }
 
 .d-father {
-  margin-left: -70px !important;
+  margin-left: 10px !important;
   background: transparent !important;
   width: 490px !important;
   .txt-content {
