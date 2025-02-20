@@ -302,11 +302,9 @@ body {
     margin-bottom: 12px !important;
     height: 41px;
     width: 340px;
-
     .task-txt {
       background: linear-gradient(
         to left bottom,
-
         #345345,
         #82788571
       ) !important;
@@ -318,7 +316,7 @@ body {
       min-height: 20px !important;
       height: 20px !important;
       font-weight: bold;
-      width: 540px;
+      width: 640px;
       text-shadow: 3px 2px 2px #000;
     }
 
