@@ -383,14 +383,14 @@ body {
   }
 }
 
-.d {
+.d {/**hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh**/
   width: 58px !important;
   height: 48px !important;
   margin-left: 0px;
   margin-top: 2px;
   color: rgba(255, 217, 0, 0.719) !important;
   font-size: 25px !important;
-  padding: 1px 16px !important;
+  padding: 1px 6px !important;
   background: linear-gradient(
     to left bottom,
     #b8a983b9,
