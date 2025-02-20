@@ -18,7 +18,6 @@ body {
   background: #00011138 !important;
 }
 
-
 .mobile-tasks {
   overflow: hidden;
   width: 360px;
@@ -272,15 +271,16 @@ body {
   background: #79797c7c;
   cursor: pointer;
 }
-ol {
-  background: transparent !important;
-}
+
+/* container of the tasks  ol */
 .tasks-container {
   border: 1px solid rgb(3, 3, 3);
   background-color: #000 !important;
+  background: #333 !important;
+  min-height:300px;
   padding: 15px 0;
   li {
-    box-shadow: 12px 12px 12px 52px rgb(4, 8, 12);
+    box-shadow: 12px 12px 12px 12px rgba(15, 25, 20,.5);
   }
 }
 
