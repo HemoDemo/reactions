@@ -107,8 +107,10 @@ function Todos() {
         <section className="tasks-shown-start">
           <h2>TASKS...</h2>
           <p>
-            {tasks.length === 0 && localTasks.length === 0
-              ? `try to add tasks to do`
+            {tasks.length === 0
+              ? `no tasks shown`
+              : localTasks.length === 0 ?
+              `try to add tasks`
               : `You still have ${tasks.length} to do`}
           </p>
         </section>
