@@ -600,6 +600,11 @@ body {
    .status-part{
        background: white !important;
     }
+  .msg-value{
+    min-width:130px !important;
+    max-width:130px !important;
+    width:60px !important;
+  }
   .stringo{
     min-width:60px;
     max-width:60px;
