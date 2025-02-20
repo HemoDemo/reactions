@@ -151,11 +151,11 @@ function Todos() {
           </ol>
         </section>
         <section className="status">
-          ST<span style={{minWidth:'30px'}}>{status}</span>
-          TS<span style={{minWidth:'30px'}}>{tasks.length}</span>
-          TSS<span style={{minWidth:'30px'}}>{localTasks.length}</span>
-          MSG<span style={{minWidth:'30px'}}>{msg.length === 0 ? "TRY TO ADD TASKS" : msg}</span>
-          ATN:<span style={{minWidth:'30px'}}>{addTaskNumber}</span>
+          <strong>ST</strong><span style={{minWidth:'30px'}}>{status}</span>
+          <strong>TS</strong><span style={{minWidth:'30px'}}>{tasks.length}</span>
+         <strong>TSS</strong><span style={{minWidth:'30px'}}>{localTasks.length}</span>
+         <strong>MSG</strong><span style={{minWidth:'30px'}}>{msg.length === 0 ? "TRY TO ADD TASKS" : msg}</span>
+         <strong>ATN</strong><span style={{minWidth:'30px'}}>{addTaskNumber}</span>
         </section>
         <section className="lastLine">
           <button className="rest" onClick={() => setLocalTasks([])}>
