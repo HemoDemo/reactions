@@ -572,8 +572,8 @@ body {
   position: sticky;
   bottom: 0px;
   height: 30px;
-  width: 330px;
-  background: rgb(24, 26, 27) !important;
+  width: 340px;
+  background: red !important;
   text-align: center;
   color: rgb(155, 148, 148) !important;
   border: 2px double #000;
