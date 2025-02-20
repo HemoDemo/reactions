@@ -593,6 +593,11 @@ body {
     width:40px;
     font-size: 11px !important;
   }
+  .longo{
+     min-width:90px;
+    max-width:90px;
+    width:90px;
+  }
   strong{
     min-width:20px;
     max-width:20px;
