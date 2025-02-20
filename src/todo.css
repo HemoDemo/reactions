@@ -577,7 +577,7 @@ body {
   text-align: center;
   color: rgb(155, 148, 148) !important;
   font-size: 11px !important;
-  border: 4px double #000;
+  border: 2px double #000;
   padding-top: 5px;
   font-weight: bold;
   word-spacing: 2px;
@@ -585,6 +585,9 @@ body {
     color: #c0bf88 !important;
     background: #000;
     padding: 0px 2px;
+    min-width:40px;
+    max-width:40px;
+    width:40px;
   }
 }
 
