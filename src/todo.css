@@ -599,9 +599,9 @@ body {
     width:60px;
   }
   .longo{
-     min-width:130px !important;
-    max-width:130px !important;
-    width:130px !important;
+     min-width:150px !important;
+    max-width:150px !important;
+    width:150px !important;
   }
   strong{
     min-width:20px;
