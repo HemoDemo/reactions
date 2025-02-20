@@ -600,7 +600,7 @@ body {
   .status-title{
       background: red !important;
       width:4px !important;
-    padding:1px 1px !important;
+    padding:1px !important;
     }
   .tasks-title{
       
@@ -609,6 +609,7 @@ body {
   .tasks-added-title{
       
     width:10px !important;
+     padding:1px !important;
     }
   .msg-title{
     width:4px !important;
@@ -616,12 +617,14 @@ body {
   }
   .tasks-stored-title{
     width:10px !important;
+     padding:1px !important;
   }
   .status-value{
     background: #123 !important;
       min-width:80px !important;
     max-width:80px !important;
     width:80px !important;
+     padding:1px !important;
 
   }
    .tasks-value{
@@ -629,6 +632,7 @@ body {
       min-width:20px !important;
     max-width:20px !important;
     width:20px !important;
+      padding:1px !important;
   }
   .tasks-stored-value{
     background: #123 !important;
@@ -646,6 +650,7 @@ body {
     min-width:110px !important;
     max-width:110px !important;
     width:110px !important;
+     padding:1px !important;
   }
 
 
