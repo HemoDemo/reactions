@@ -153,31 +153,41 @@ function Todos() {
         <section className="status">
           <h6 className='span stringo'>
             <span className='strong'>ST</span>
-            {status}
+            <span className='values'>
+              {status}
+            </span>
           </h6>
           <h6 className='span'>
             <span className='strong'>
               TS
             </span>
-              {tasks.length}
+              <span className='values'>
+                {tasks.length}
+              </span>
           </h6>
           <h6 className='span'>
             <span className='strong'>
             TSS
             </span>
-            {localTasks.length}
+            <span className='values'>
+              {localTasks.length}
+            </span>
           </h6>
           <h6 className='span longo'>
             <span className='strong'>
              M
            </span>
-           {msg.length === 0 ? "TRY TO ADD TASKS" : msg}
+           <span className='values'>
+             {msg.length === 0 ? "TRY TO ADD TASKS" : msg}
+           </span>
          </h6>
          <h6 className='span'>
             <span className='strong'>
               ATN
             </span>
-            {addTaskNumber}
+            <span className='values'>
+              {addTaskNumber}
+            </span>
           </h6>
         </section>
         <section className="lastLine">
