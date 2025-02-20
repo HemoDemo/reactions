@@ -612,6 +612,7 @@ body {
     }
   .msg-title{
     width:4px !important;
+    padding:1px !important;
   }
   .tasks-stored-title{
     width:10px !important;
