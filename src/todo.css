@@ -318,6 +318,7 @@ body {
     .task-controls {
       width: 133px;
       width: 135px;
+       width: 155px !important;/***************************  1   ***/
       height: 37px; /*50*/
       height: 50px; /*37*/
       margin-left: 1px;/*****/
@@ -333,10 +334,9 @@ body {
         #111
       ) !important;
       background: linear-gradient(to bottom, #14130f, #1c221c) !important;
-
       display: flex;
       justify-content: space-between;
-      gap: 1px;
+      gap: 3px;/************************************                 gap      ***********/
       align-items: center;
       .del-btn,
       .up-btn,
