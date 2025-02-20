@@ -605,6 +605,7 @@ body {
     min-width:140px !important;
     max-width:140px !important;
     width:140px !important;
+    background:blue !important;
   }
   .values{
     z-index:100;
