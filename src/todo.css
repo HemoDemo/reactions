@@ -604,6 +604,9 @@ body {
   .msg-title{
     width:6px !important;
   }
+  .tasks-stored-title{
+    width:10px !important;
+  }
   .status-value{
     background: #123 !important;
       min-width:60px !important;
