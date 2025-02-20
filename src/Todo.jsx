@@ -167,7 +167,7 @@ function Todos() {
             </span>
             {localTasks.length}
           </h6>
-          <h6 className='span'>
+          <h6 className='span longo'>
             <span className='strong'>
              MSG
            </span>
