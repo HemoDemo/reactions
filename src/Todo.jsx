@@ -169,7 +169,7 @@ function Todos() {
           </h6>
           <h6 className='span longo'>
             <span className='strong'>
-             MSG
+             M
            </span>
            {msg.length === 0 ? "TRY TO ADD TASKS" : msg}
          </h6>
