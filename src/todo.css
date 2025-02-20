@@ -308,7 +308,7 @@ body {
         #345345,
         #82788571
       ) !important;
-      padding: 1px 10px;
+      padding: 1px 15px;
       font-size: 24px;
       text-align: center;
       color: #d8cbcb96 !important;
@@ -429,7 +429,6 @@ body {
   ) !important;
   height: 295px;
 }
-
 .tasks-big-shown {
   width: 352px !important;
   background: linear-gradient(
@@ -446,7 +445,6 @@ body {
   clip-path: inset(0 round 5px);
   overflow: scroll;
   overflow-y: hidden;
-
   background: linear-gradient(
     to left bottom,
     #87600055,
@@ -454,7 +452,6 @@ body {
     #345345,
     #79797cef
   ) !important;
-
   height: 38px;
   height: 50px;
 }
