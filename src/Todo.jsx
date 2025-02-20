@@ -151,41 +151,41 @@ function Todos() {
           </ol>
         </section>
         <section className="status">
-          <h6 className='span stringo'>
-            <span className='strong'>ST</span>
-            <span className='values'>
+          <h6 className='span status-part'>
+            <span className='strong status-title'>ST</span>
+            <span className='values status-value'>
               {status}
             </span>
           </h6>
-          <h6 className='span'>
-            <span className='strong'>
+          <h6 className='span tasks-part'>
+            <span className='strong tasks-title'>
               TS
             </span>
-              <span className='values'>
+              <span className='values tasks-value'>
                 {tasks.length}
               </span>
           </h6>
-          <h6 className='span'>
-            <span className='strong'>
+          <h6 className='span tasks-stored-part'>
+            <span className='strong tasks-stored-title'>
             TSS
             </span>
-            <span className='values'>
+            <span className='values tasks-stored-value'>
               {localTasks.length}
             </span>
           </h6>
-          <h6 className='span longo'>
-            <span className='strong'>
+          <h6 className='span msg-part'>
+            <span className='strong msg-title'>
              M
            </span>
-           <span className='values'>
+           <span className='values msg-value'>
              {msg.length === 0 ? "TRY TO ADD TASKS" : msg}
            </span>
          </h6>
-         <h6 className='span'>
-            <span className='strong'>
+         <h6 className='span tasks-added-part'>
+            <span className='strong tasks-added-title'>
               ATN
             </span>
-            <span className='values'>
+            <span className='values tasks-added-value'>
               {addTaskNumber}
             </span>
           </h6>
