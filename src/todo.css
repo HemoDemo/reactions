@@ -600,6 +600,9 @@ body {
   .status-title{
        background: yellow !important;
     }
+  .status-value{
+    background: purple !important;
+  }
   .msg-value{
     min-width:130px !important;
     max-width:130px !important;
