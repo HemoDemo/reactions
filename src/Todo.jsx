@@ -149,7 +149,7 @@ function Todos() {
           </ol>
         </section>
         <section className="status">
-          STATUS<span>{status}</span>TASKS<span>{tasks.length}</span>MSG
+          ST<span>{status}</span>TS<span>{tasks.length}</span>TSS<span>{localTasks.length}</span>MSG
           <span>{msg.length === 0 ? "TRY TO ADD TASKS" : msg}</span>ATN:
           <span>{addTaskNumber}</span>
         </section>
