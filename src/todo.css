@@ -73,7 +73,6 @@ body {
 .txt4 {
   min-width: 10px !important;
   height: 15px !important;
-
   margin-right: 2px;
   border-top: 12px solid #5e5959;
   border-left: 11px solid #180c20;
@@ -83,7 +82,6 @@ body {
 .txt5 {
   min-width: 8px !important;
   height: 11px !important;
-
   margin-right: 1px;
   border-top: 7px solid #504d4d;
   border-left: 2px solid #231f29;
@@ -93,7 +91,6 @@ body {
 .txt6 {
   min-width: 8px !important;
   height: 5px !important;
-
   margin-right: 1px;
   border-top: 3px solid #555151f6;
   border-left: 2px solid #1b1129;
@@ -133,7 +130,6 @@ body {
     #22222255,
     #55555533
   ) !important;
-
   margin: 1px auto;
 }
 
@@ -194,7 +190,6 @@ body {
 }
 
 /*disabled btn*/
-
 .tasks-entry-btn-disabled {
   text-shadow: 2px 2px 2px #111;
   border: 2px solid #000;
@@ -325,7 +320,7 @@ body {
       width: 135px;
       height: 37px; /*50*/
       height: 50px; /*37*/
-      margin-left: -18px;
+      margin-left: 1px;/*****/
       z-index: 22;
       border-radius: 0px 5px 5px 0px !important;
       border-radius: 0px 5px 5px 0px !important;
