@@ -151,7 +151,7 @@ function Todos() {
           </ol>
         </section>
         <section className="status">
-          <h6 className='span'>
+          <h6 className='span stringo'>
             <span className='strong'>ST</span>
             {status}
           </h6>
