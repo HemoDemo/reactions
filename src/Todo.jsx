@@ -116,9 +116,7 @@ function Todos() {
           <ol className="tasks-container">
             {tasks.map((task, index) => (
               <li key={index}>
-                <div className="txt-content">
-                  <h2 className="task-txt">{task}</h2>
-                </div>
+                
                 <div className="task-controls">
                   <button className="down-btn" onClick={() => down(index)}>
                     👇
@@ -129,6 +127,9 @@ function Todos() {
                   <button className="del-btn" onClick={() => del(index)}>
                     x
                   </button>
+                </div>
+                <div className="txt-content">
+                  <h2 className="task-txt">{task}</h2>
                 </div>
               </li>
             ))}
