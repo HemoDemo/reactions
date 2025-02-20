@@ -595,11 +595,11 @@ body {
    
   }
    .status-part{
-       background: transparent !important;
+      background: #000 !important;
     }
   .status-title{
       
-    width:15px !important;
+    width:9px !important;
     }
   .msg-title{
     width:6px !important;
