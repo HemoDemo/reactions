@@ -582,7 +582,7 @@ body {
   font-weight: bold;
   word-spacing: 2px;
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
   align-items:center;
   .span {
     color: #c0bf88 !important;
@@ -607,6 +607,7 @@ body {
     min-width:10px;
     max-width:20px;
     width:10px;
+    margin-right:2px;
   }
 }
 
