@@ -151,11 +151,34 @@ function Todos() {
           </ol>
         </section>
         <section className="status">
-          <h6 className='span' style={{minWidth:'30px'}}><strong>ST</strong>{status}</h6>
-          <h6 className='span' style={{minWidth:'30px'}}><strong>TS</strong>{tasks.length}</h6>
-          <h6 className='span' style={{minWidth:'30px'}}><strong>TSS</strong>{localTasks.length}</h6>
-          <h6 className='span' style={{minWidth:'30px'}}><strong>MSG</strong>{msg.length === 0 ? "TRY TO ADD TASKS" : msg}</h6>
-          <h6 className='span' style={{minWidth:'30px'}}><strong>ATN</strong>{addTaskNumber}</h6>
+          <h6 className='span'>
+            <span className='strong'>ST</span>
+            {status}
+          </h6>
+          <h6 className='span'>
+            <span className='strong'>
+              TS
+            </span>
+              {tasks.length}
+          </h6>
+          <h6 className='span'>
+            <span className='strong'>
+            TSS
+            </span>
+            {localTasks.length}
+          </h6>
+          <h6 className='span'>
+            <span className='strong'>
+             MSG
+           </span>
+           {msg.length === 0 ? "TRY TO ADD TASKS" : msg}
+         </h6>
+         <h6 className='span'>
+            <span className='strong'>
+              ATN
+            </span>
+            {addTaskNumber}
+          </h6>
         </section>
         <section className="lastLine">
           <button className="rest" onClick={() => setLocalTasks([])}>
