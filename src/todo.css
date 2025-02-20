@@ -576,7 +576,7 @@ body {
   background: #123 !important;
   text-align: center;
   color: rgb(155, 148, 148) !important;
-  border: 2px double #000;
+  border: 1px double #000;
   padding-top: 5px;
   font-weight: bold;
   word-spacing: 1px;
