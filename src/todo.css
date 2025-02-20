@@ -323,7 +323,7 @@ body {
       margin-left: 1px;/*****/
       z-index: 22;
       border-radius: 0px 5px 5px 0px !important;
-      border-radius: 0px 5px 5px 0px !important;
+      border-radius: 5px 0px 0px 5px !important;
       background: linear-gradient(
         to bottom,
         #85744a,
