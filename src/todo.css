@@ -609,6 +609,7 @@ body {
   }
   .values{
     z-index:100;
+    background:red !important;
   }
   strong{
     min-width:10px;
