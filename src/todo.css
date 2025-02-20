@@ -596,6 +596,9 @@ body {
   }
    .status-part{
       background: #000 !important;
+        min-width:70px !important;
+    max-width:70px !important;
+    width:70px !important;
     }
   .status-title{
       background: red !important;
@@ -621,9 +624,9 @@ body {
   }
   .status-value{
     background: #123 !important;
-      min-width:80px !important;
-    max-width:80px !important;
-    width:80px !important;
+      min-width:70px !important;
+    max-width:70px !important;
+    width:70px !important;
      padding:1px !important;
 
   }
