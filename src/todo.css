@@ -598,7 +598,7 @@ body {
        background: transparent !important;
     }
   .status-title{
-      background: transparent !important;
+      
     width:15px !important;
     }
   .msg-title{
@@ -609,7 +609,7 @@ body {
       min-width:60px !important;
     max-width:60px !important;
     width:60px !important;
-    padding:8px 1px !important;
+    padding:4px 1px !important;
   }
   .msg-value{
     min-width:110px !important;
