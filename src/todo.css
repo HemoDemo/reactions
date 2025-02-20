@@ -572,7 +572,7 @@ body {
   position: sticky;
   bottom: 0px;
   height: 30px;
-  width: 100%;
+  width: 340px;
   background: rgb(24, 26, 27) !important;
   text-align: center;
   color: rgb(155, 148, 148) !important;
@@ -587,14 +587,14 @@ body {
   .span {
     color: #c0bf88 !important;
     background: #000;
-    padding: 0px 2px;
+    padding: 0px 1px;
     min-width:20px;
     max-width:20px;
     width:20px;
     font-size: 10px !important;
-      display:flex;
-      justify-content:space-around;
-     align-items:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
   }
   .stringo{
     min-width:60px;
@@ -602,7 +602,7 @@ body {
     width:60px;
   }
   .longo{
-     min-width:150px !important;
+    min-width:150px !important;
     max-width:150px !important;
     width:150px !important;
   }
@@ -610,7 +610,6 @@ body {
     min-width:10px;
     max-width:20px;
     width:10px;
-    margin-right:2px;
   }
 }
 
