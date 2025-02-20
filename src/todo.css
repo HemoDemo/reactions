@@ -600,6 +600,7 @@ body {
   .status-title{
       background: red !important;
       width:4px !important;
+    padding:1px 1px !important;
     }
   .tasks-title{
       
