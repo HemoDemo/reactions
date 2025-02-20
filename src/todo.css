@@ -599,6 +599,7 @@ body {
     }
   .status-title{
       background: transparent !important;
+    width:15px !important;
     }
   .status-value{
     background: red !important;
@@ -607,9 +608,9 @@ body {
     width:60px !important;
   }
   .msg-value{
-    min-width:130px !important;
-    max-width:130px !important;
-    width:130px !important;
+    min-width:120px !important;
+    max-width:120px !important;
+    width:120px !important;
   }
   .stringo{
     min-width:60px;
