@@ -581,6 +581,9 @@ body {
   padding-top: 5px;
   font-weight: bold;
   word-spacing: 2px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
   .span {
     color: #c0bf88 !important;
     background: #000;
