@@ -609,6 +609,9 @@ body {
   .values{
     z-index:100;
     background:red !important;
+    min-width:10px;
+    max-width:20px;
+    width:10px;
   }
   strong{
     min-width:10px;
