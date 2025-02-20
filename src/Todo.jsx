@@ -152,9 +152,7 @@ function Todos() {
         </section>
         <section className="status">
           <h6 className='span status-part'>
-            <span className='status-title'>
-             
-            </span>
+        
             <span className='values status-value'>
               {status}
             </span>
