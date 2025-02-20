@@ -592,6 +592,9 @@ body {
     max-width:20px;
     width:20px;
     font-size: 10px !important;
+      display:flex;
+      justify-content:space-around;
+     align-items:center;
   }
   .stringo{
     min-width:60px;
