@@ -595,10 +595,11 @@ body {
     display:flex;
     justify-content:space-between;
     align-items:center;
-    .status-part{
+   
+  }
+   .status-part{
        background: white !important;
     }
-  }
   .stringo{
     min-width:60px;
     max-width:60px;
