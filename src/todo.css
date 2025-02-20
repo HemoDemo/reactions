@@ -581,8 +581,8 @@ body {
   font-weight: bold;
   word-spacing: 1px;
   display:flex;
-  justify-content:space-around;
-  gap:2px;
+  justify-content:space-between;
+  gap:1px;
   align-items:center;
   .span {
     color: #c0bf88 !important;
@@ -599,6 +599,9 @@ body {
   }
    .status-part{
        background: white !important;
+    }
+  .status-title{
+       background: yellow !important;
     }
   .msg-value{
     min-width:130px !important;
@@ -619,16 +622,10 @@ body {
   .values{
     z-index:100;
     background:red !important;
-    min-width:10px;
+    min-width:20px;
     max-width:20px;
-    width:10px;
+    width:20px;
   }
-  strong{
-    min-width:10px;
-    max-width:20px;
-    width:10px;
-    z-index:10;
-    background:green !important;
-  }
+ 
 }
 
