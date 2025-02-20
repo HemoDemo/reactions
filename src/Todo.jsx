@@ -118,14 +118,14 @@ function Todos() {
               <li key={index}>
                 
                 <div className="task-controls">
+                  <button className="del-btn" onClick={() => del(index)}>
+                    x
+                  </button>
                   <button className="down-btn" onClick={() => down(index)}>
                     👇
                   </button>
                   <button className="up-btn" onClick={() => up(index)}>
                     👆
-                  </button>
-                  <button className="del-btn" onClick={() => del(index)}>
-                    x
                   </button>
                 </div>
                 <div className="txt-content">
