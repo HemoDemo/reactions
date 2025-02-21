@@ -384,7 +384,7 @@ body {
 }
 
 .d {
-  /**hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh**/
+ 
   width: 58px !important;
   height: 48px !important;
   margin-left: 0px;
@@ -526,7 +526,7 @@ body {
   align-items: center;
   justify-content: space-between;
   justify-items: stretch;
-  background-color: #000 !important;
+
 }
 .rest {
   font-size: 12px;
