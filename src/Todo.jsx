@@ -116,6 +116,14 @@ function Todo() {
           </Button>
         </section>
         <section className="entry">
+           <button
+            className={
+              tasks.length === 0
+                ? `tasks-entry-btn-disabled`
+                : `tasks-entry-btn`
+            }
+            onClick={add}
+          ></button>
           <input
             type="text"
             placeholder="اضف مهمة ..."
@@ -125,14 +133,7 @@ function Todo() {
             ref={focus}
             onFocus={inputOnclick}
           />
-          <button
-            className={
-              tasks.length === 0
-                ? `tasks-entry-btn-disabled`
-                : `tasks-entry-btn`
-            }
-            onClick={add}
-          ></button>
+         
         </section>
         <section className="tasks-shown-start">
           <h2>TASKS...</h2>
