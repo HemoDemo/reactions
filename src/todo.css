@@ -54,9 +54,8 @@ body {
   border-top: 18px solid #817e7e71;
   border-left: 2px solid #081318;
   visibility: visible;
-  padding:2px 18px;
+  padding: 2px 18px;
   box-shadow: 12px 4px 2px #123;
- 
 }
 .txt4,
 .txt5,
@@ -154,6 +153,7 @@ body {
   font-size: 30px !important;
   text-indent: 12px;
   font-weight: bold;
+  direction: rtl !important;
 }
 .tasks-entry-big::placeholder {
   color: rgb(143, 57, 165);
@@ -272,10 +272,10 @@ body {
   border: 1px solid rgb(3, 3, 3);
   background-color: #000 !important;
   background: #333 !important;
-  min-height:300px;
+  min-height: 300px;
   padding: 15px 0;
   li {
-    box-shadow: 12px 12px 12px 12px rgba(15, 25, 20,.5);
+    box-shadow: 12px 12px 12px 12px rgba(15, 25, 20, 0.5);
   }
 }
 
@@ -305,7 +305,7 @@ body {
       ) !important;
       padding: 1px 15px;
       font-size: 24px;
-      text-align: center;
+      text-align: right;
       color: #d8cbcb96 !important;
       max-height: 20px !important;
       min-height: 20px !important;
@@ -318,10 +318,10 @@ body {
     .task-controls {
       width: 133px;
       width: 135px;
-       width: 155px !important;/***************************  1   ***/
+      width: 155px !important; /***************************  1   ***/
       height: 37px; /*50*/
       height: 50px; /*37*/
-      margin-left: 1px;/*****/
+      margin-left: 1px; /*****/
       z-index: 22;
       border-radius: 0px 5px 5px 0px !important;
       border-radius: 5px 0px 0px 5px !important;
@@ -336,7 +336,7 @@ body {
       background: linear-gradient(to bottom, #14130f, #1c221c) !important;
       display: flex;
       justify-content: space-between;
-      gap: 3px;/************************************                 gap      ***********/
+      gap: 3px; /************************************                 gap      ***********/
       align-items: center;
       .del-btn,
       .up-btn,
@@ -383,14 +383,15 @@ body {
   }
 }
 
-.d {/**hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh**/
+.d {
+  /**hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh**/
   width: 58px !important;
   height: 48px !important;
   margin-left: 0px;
-  margin-top: 2px;
+  margin-top: 8px;
   color: rgba(255, 217, 0, 0.719) !important;
   font-size: 25px !important;
-  padding: 1px 6px !important;
+  padding: 1px !important;
   background: linear-gradient(
     to left bottom,
     #b8a983b9,
@@ -449,6 +450,7 @@ body {
   ) !important;
   height: 38px;
   height: 50px;
+  direction: rtl !important;
 }
 
 /* .txt-content scrollbar */
@@ -493,24 +495,30 @@ body {
 }
 
 .d-father {
-  margin-left: 10px !important;
+  margin-left: 8px !important;
   background: transparent !important;
-  width: 390px !important;
+  width: 320px !important;
   .txt-content {
     width: 330px !important;
     .task-txt {
-      width: 290px;
+      width: 250px;
     }
   }
   .tsk-cont-d {
-    border-top-right-radius: 22%;
-    border-bottom-right-radius: 22%;
-    border-top-left-radius: 2%;
-    border-bottom-left-radius: 2%;
-    background: transparent !important;
-    width: fit-content !important;
-    padding: 22px 2px;
-    width: 40px !important;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+    background: rgba(83, 98, 100, 0) !important;
+    width: 82px !important;
+    border: 3px solid rgba(20, 34, 43, 0.904);
+    padding: 0 1px !important;
+    margin: 1px !important;
+    z-index: 111;
+    .d {
+      border: none !important;
+      margin-top: 1px !important;
+    }
   }
 }
 .lastLine {
@@ -527,13 +535,14 @@ body {
   border: 1px solid rgb(63, 63, 78);
   border-bottom: none;
   min-width: 70px;
+  font-weight: bold;
 }
 .rest:hover {
   background-color: #0808084b !important;
   cursor: pointer;
 }
 
-.refresh{
+.refresh {
   font-size: 12px;
   font-family: Papyrus;
   border: 1px solid rgb(63, 63, 78);
@@ -542,9 +551,24 @@ body {
   background-color: #0808084b !important;
   min-width: 60px;
 }
-.refresh:hover{
+.refresh:hover {
   border: 1px solid rgb(104, 114, 76);
-  color:rgb(164, 165, 89) !important;
+  color: rgb(164, 165, 89) !important;
+}
+
+.childhood {
+  padding: 0px !important;
+  min-width: 20px;
+  max-width: 20px;
+  width: 20px;
+  font-size: 15px;
+  margin-top: 6px !important;
+  background-color: #080808c2 !important;
+  border-radius: 50%;
+}
+.childhood:hover {
+  cursor: pointer;
+  color: rgb(164, 165, 89) !important;
 }
 .app-creator {
   display: flex;
@@ -556,9 +580,9 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 2px solid #000;
+    border: 1px solid #000;
     margin-left: 8px;
-    box-shadow: 1px 1px 2px 1px rgb(73, 78, 45);
+    box-shadow: 0px 1px 1px 0px rgb(23, 26, 13);
   }
   .himo-title {
     width: 290px;
@@ -572,96 +596,104 @@ body {
   position: sticky;
   bottom: 0px;
   height: 30px;
-  width: 360px;
+  width: 355px;
   background: #123 !important;
   text-align: center;
   color: rgb(155, 148, 148) !important;
   border: 1px double #000;
-  padding: 5px 0px;
+  padding: 2px 0px;
   font-weight: bold;
-  word-spacing: 1px;
-  display:flex;
-  justify-content:space-between;
-  gap:1px;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .span {
     color: #c0bf88 !important;
     background: #000;
-    padding: 3px 1px;
+    padding: 3px 0;
     font-size: 10px !important;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
-   .status-part{
-      background: #000 !important;
-        min-width:70px !important;
-    max-width:70px !important;
-    width:70px !important;
-    }
-  .status-title{
-      background: red !important;
-      width:4px !important;
-    padding:1px !important;
-    }
-  .tasks-title{
-      
-    width:1px !important;
-    }
-  .tasks-added-title{
-      
-    width:10px !important;
-     padding:1px !important;
-    }
-  .msg-title{
-    width:4px !important;
-    padding:1px !important;
-  }
-  .tasks-stored-title{
-    width:10px !important;
-     padding:1px !important;
-  }
-  .status-value{
-    background: #123 !important;
-      min-width:70px !important;
-    max-width:70px !important;
-    width:70px !important;
-     padding:1px !important;
-
-  }
-   .tasks-value{
-    background: #123 !important;
-      min-width:20px !important;
-    max-width:20px !important;
-    width:20px !important;
-      padding:1px !important;
-  }
-  .tasks-stored-value{
-    background: #123 !important;
-      min-width:20px !important;
-    max-width:20px !important;
-    width:20px !important;
-  }
-  .tasks-added-value{
-    background: #123 !important;
-      min-width:20px !important;
-    max-width:20px !important;
-    width:20px !important;
-  }
-  .msg-value{
-    min-width:110px !important;
-    max-width:110px !important;
-    width:110px !important;
-     padding:1px !important;
+  .status-part {
+    background: #000 !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    width: 70px !important;
   }
 
-
-  .values{
-    z-index:100;
-    background:#123 !important;
-    border:2px solid #000;
+  .tasks-part {
+    width: 40px !important;
   }
- 
+  .tasks-stored-part {
+    width: 50px !important;
+  }
+  .msg-part {
+    min-width: 100px;
+    max-width: 100px;
+    width: 100px;
+  }
+  .tasks-added-part {
+    width: 60px !important;
+  }
+
+  .tasks-title {
+    min-width: 11px !important;
+    max-width: 11px !important;
+    padding: 0 1px;
+    width: 11px !important;
+  }
+
+  .tasks-added-title {
+    min-width: 13px !important;
+    max-width: 13px !important;
+    padding: 0 1px;
+    width: 13px !important;
+  }
+
+  .tasks-stored-title {
+    min-width: 11px !important;
+    max-width: 11px !important;
+    padding: 0 1px;
+    width: 11px !important;
+  }
+
+  .msg-title {
+    min-width: 9px !important;
+    max-width: 9px !important;
+    padding: 0 1px;
+    width: 9px !important;
+  }
+  .status-value {
+    background: #123 !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    width: 70px !important;
+    padding: 1px !important;
+  }
+  .tasks-value {
+    background: #123 !important;
+    min-width: 25px !important;
+    max-width: 25px !important;
+    width: 25px !important;
+    padding: 1px !important;
+  }
+  .tasks-stored-value {
+    background: #123 !important;
+    min-width: 25px !important;
+    max-width: 25px !important;
+    width: 25px !important;
+  }
+
+  .msg-value {
+    min-width: 90px !important;
+    max-width: 90px !important;
+    width: 90px !important;
+  }
+
+  .values {
+    z-index: 100;
+    background: #123 !important;
+    border: 4px double #000;
+  }
 }
-
