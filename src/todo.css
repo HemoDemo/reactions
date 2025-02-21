@@ -318,7 +318,7 @@ body {
     .task-controls {
       width: 133px;
       width: 135px;
-      width: 155px !important; /***************************  1   ***/
+      width: 155px !important; 
       height: 37px; /*50*/
       height: 50px; /*37*/
       margin-left: 1px; /*****/
@@ -336,7 +336,7 @@ body {
       background: linear-gradient(to bottom, #14130f, #1c221c) !important;
       display: flex;
       justify-content: space-between;
-      gap: 3px; /************************************                 gap      ***********/
+      gap: 3px;
       align-items: center;
       .del-btn,
       .up-btn,
@@ -590,8 +590,9 @@ body {
     height: 20px;
     font-size: 15px;
     background: #141300 !important;
-    border-radius: 15px 10px 0px 5px !important;
+    border-radius: 5px 0px 0px 5px !important;
     text-shadow: 1px 1px 1px 1px #000; 
+    padding:6px 0;
   }
 }
 
