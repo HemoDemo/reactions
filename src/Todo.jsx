@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react";
-import "./todos-v-0.2.0.css";
+import "./todo.css";
 import Button from "./Button";
 import Himo from "./himo.png";
-function Todos() {
+function Todo() {
   const getTasks = () => {
     const data = JSON.parse(localStorage.getItem("tasks"));
     if (data) {
@@ -248,6 +248,6 @@ function Todos() {
   );
 }
 
-export default Todos;
+export default Todo;
 
 
