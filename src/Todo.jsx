@@ -146,7 +146,7 @@ function Todo() {
               ? `مازال لديك مهمة للقيام بها`
               : tasks.length === 2
               ? `مازال لديك مهمتان للقيام بهما`
-              : `مازال لديك ${tasks.length} مهام للقيم بها`}
+              : `مازال لديك ${tasks.length} مهام للقيام بها`}
           </p>
         </section>
         <section className="tasks-shown tasks-big-shown">
