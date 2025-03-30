@@ -173,9 +173,9 @@ function Todo() {
                     </button>
                   </div>
                   
-                  <button className="speak-btn" onClick={() => speaks(index)}>
+                  {/*<button className="speak-btn" onClick={() => speaks(index)}>
                     s
-                  </button>
+                  </button>*/}
                 </div>
                 <div className="txt-content">
                   <h2 lang="ar" className="task-txt"  onClick={() => speaks(index)}>
