@@ -169,7 +169,7 @@ function Todo() {
                   <button className="up-btn" onClick={() => up(index)}>
                     👆
                   </button>
-                  <button className="del-btn" onClick={() => speak(index)}>
+                  <button className="speak-btn" onClick={() => speak(index)}>
                     s
                   </button>
                 </div>
