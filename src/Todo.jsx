@@ -163,12 +163,15 @@ function Todo() {
                   <button className="del-btn" onClick={() => del(index)}>
                     x
                   </button>
-                  <button className="down-btn" onClick={() => down(index)}>
+                  <div style={{display:'flex',flexDirection:'column'}}>
+                    <button className="down-btn" onClick={() => down(index)}>
                     👇
-                  </button>
-                  <button className="up-btn" onClick={() => up(index)}>
+                    </button>
+                    <button className="up-btn" onClick={() => up(index)}>
                     👆
-                  </button>
+                    </button>
+                  </div>
+                  
                   <button className="speak-btn" onClick={() => speak(index)}>
                     s
                   </button>
