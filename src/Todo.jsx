@@ -64,6 +64,12 @@ function Todo() {
     setTasks(t);
     addTaskNumber > 0 && setAddTaskNumber(addTaskNumber - 1);
   }
+  function speak(index) {
+    setStatus("تحدث");
+    const t = tasks.filter((task, i) => i === index);
+    const v = new SpeechSynthesisUtternace(t);
+    window.speechSynthesis.speak(v);
+  }
   function delM(index) {
     setStatus("ازالة التنبيه");
     const ms = msg.filter((m, i) => i !== index);
@@ -162,6 +168,9 @@ function Todo() {
                   </button>
                   <button className="up-btn" onClick={() => up(index)}>
                     👆
+                  </button>
+                  <button className="del-btn" onClick={() => speak(index)}>
+                    s
                   </button>
                 </div>
                 <div className="txt-content">
