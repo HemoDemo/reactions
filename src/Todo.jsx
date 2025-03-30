@@ -64,10 +64,10 @@ function Todo() {
     setTasks(t);
     addTaskNumber > 0 && setAddTaskNumber(addTaskNumber - 1);
   }
-  function speak(index) {
+  function speaks(index) {
     setStatus("تحدث");
     const t = tasks.filter((task, i) => i === index);
-    const v = new SpeechSynthesisUtternace(t);
+    const v = new SpeechSynthesisUtterance(t);
     window.speechSynthesis.speak(v);
   }
   function delM(index) {
@@ -172,7 +172,7 @@ function Todo() {
                     </button>
                   </div>
                   
-                  <button className="speak-btn" onClick={() => speak(index)}>
+                  <button className="speak-btn" onClick={() => speaks(index)}>
                     s
                   </button>
                 </div>
