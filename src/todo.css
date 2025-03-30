@@ -518,6 +518,7 @@ body {
     width: 330px !important;
     .task-txt {
       width: 250px;
+      cursor:pointer;
     }
   }
   .tsk-cont-d {
