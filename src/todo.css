@@ -7,6 +7,9 @@
   box-sizing: border-box !important;
   min-width: 30px;
 }
+.order{
+  background: transparent !important;
+}
 .app {
   margin: 20px auto;
   width: 100% !important;
