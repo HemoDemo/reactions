@@ -64,10 +64,10 @@ function Todo() {
     setTasks(t);
     addTaskNumber > 0 && setAddTaskNumber(addTaskNumber - 1);
   }
-  function speaks(index) {
+  function speaks(index) {//////////////////////////////////////////////////////////////////////////////
     setStatus("تحدث");
-    const t = tasks.map((task, i) => i === index);
-    const v = new SpeechSynthesisUtterance(t);
+    const t = tasks.filter((task, i) => i === index);
+    const myTask = new SpeechSynthesisUtterance(t);
     window.speechSynthesis.speak(v);
   }
   function delM(index) {
@@ -177,7 +177,7 @@ function Todo() {
                   </button>
                 </div>
                 <div className="txt-content">
-                  <h2 lang="ar" className="task-txt">
+                  <h2 lang="ar" className="task-txt"  onClick={() => speaks(index)}>
                     {task}
                   </h2>
                 </div>
