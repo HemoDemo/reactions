@@ -7,9 +7,6 @@
   box-sizing: border-box !important;
   min-width: 30px;
 }
-/*
- style={{display:'flex',flexDirection:'column',maxHeight:'60px'}}
-*/
 .order{
   display:flex;
   flex-direction:column;
@@ -329,7 +326,7 @@ body {
       width: 135px;
       width: 155px !important; 
       height: 37px; /*50*/
-      height: 50px; /*37*/
+      height: 70px; /*37*/
       margin-left: 1px; /*****/
       z-index: 22;
       border-radius: 0px 5px 5px 0px !important;
