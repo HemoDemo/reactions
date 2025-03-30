@@ -379,6 +379,11 @@ body {
         padding: 2px;
         font-size: 14px;
       }
+       .speak-btn {
+        padding: 2px;
+        font-size: 14px;
+         color:blue;
+      }
     }
   }
 }
