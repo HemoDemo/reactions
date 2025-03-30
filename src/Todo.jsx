@@ -163,7 +163,7 @@ function Todo() {
                   <button className="del-btn" onClick={() => del(index)}>
                     x
                   </button>
-                  <div style={{display:'flex',flexDirection:'column',maxHeight:'60px'}}>
+                  <div className='order'>
                     <button className="down-btn" onClick={() => down(index)}>
                     👇
                     </button>
