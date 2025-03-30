@@ -66,9 +66,10 @@ function Todo() {
   }
   function speaks(index) {//////////////////////////////////////////////////////////////////////////////
     setStatus("تحدث");
-    const t = tasks.filter((task, i) => i === index);
-    const myTask = new SpeechSynthesisUtterance(t);
-    window.speechSynthesis.speak(v);
+    //const t = tasks.filter((task, i) => i === index);
+    const v = tasks[index];
+    const myTask = new SpeechSynthesisUtterance(v);
+    window.speechSynthesis.speak(myTask);
   }
   function delM(index) {
     setStatus("ازالة التنبيه");
