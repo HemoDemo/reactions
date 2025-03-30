@@ -66,7 +66,7 @@ function Todo() {
   }
   function speaks(index) {
     setStatus("تحدث");
-    const t = tasks.filter((task, i) => i === index);
+    const t = tasks.map((task, i) => i === index);
     const v = new SpeechSynthesisUtterance(t);
     window.speechSynthesis.speak(v);
   }
