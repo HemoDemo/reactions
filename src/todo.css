@@ -304,7 +304,7 @@ body {
     padding: 1px;
     margin: 19px auto;
     margin-bottom: 12px !important;
-    height: 41px;
+    height: 81px; /* //////////////////////////////////////////////////////////////////////////height of task//////////////////////////////////////////////////////////// */
     width: 340px;
     .task-txt {
       background: linear-gradient(
