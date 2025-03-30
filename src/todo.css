@@ -349,7 +349,8 @@ body {
       align-items: center;
       .del-btn,
       .up-btn,
-      .down-btn {
+      .down-btn,
+      .speak-btn{
         width: 12px;
         height: 28px;
         padding: 6px 4px;
